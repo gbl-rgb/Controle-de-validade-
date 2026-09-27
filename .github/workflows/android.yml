@@ -1,7 +1,5 @@
-
-
 name: Build APK
-on:
+on: [push]
 jobs:
   build:
     runs-on: ubuntu-22.04
@@ -21,4 +19,4 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: apk
-          path: bin/*.apk[push]
+          path: bin/*.apk
